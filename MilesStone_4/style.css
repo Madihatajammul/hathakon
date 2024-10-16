@@ -1,0 +1,151 @@
+/*General Styles*/
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1{
+    text-align: center;
+    color: #1e90ff;
+    margin-top: 20px;
+}
+main{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+}
+
+/*Form Styles*/
+form{
+    display: grid;
+    gap: 20px;
+}
+fieldset{
+    border: 2px solid #1e90ff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0faff;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+}
+legend{
+    font-weight: bold;
+    color: #1e90ff;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus{
+    border-color: #1e90ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(30, 144, 255, 0.5);
+}
+input[type="file"]{
+    padding: 8px;
+} 
+button{
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover{
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, o.2);
+}
+
+button:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30,144,255, 0.5);
+}
+/*Resume Output Styles*/
+#resumeOutput{
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+}
+#resumeOutput h2{
+    border-bottom: 3px solid #1e90ff;
+    padding-bottom: 10px;
+    color: #1e90ff;
+}
+#resumeOutput img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #1e90ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.editable{
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.editable.editing{
+    border-color: #1e90ff;
+    background-color: #e6f0ff;
+}
+.editable[contenteditable="true"]:focus
+{
+    outline: none;
+    box-shadow: 0 0 4px rgba(30, 144, 255, 0.5);
+}
+
+/*Bottom Styles*/
+#editButton{
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#editButton:hover{
+    background-color: #218838;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#editButton:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40,167,69, 0.5);
+}
+
+
